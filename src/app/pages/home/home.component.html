@@ -1,0 +1,189 @@
+<app-header></app-header>
+<div class="carrousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/server_room.webp" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/server_room.webp" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/server_room.webp" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<div class="container">
+    <section id="pricing">
+      <img src="assets/pricing.svg" alt="euros" class="section_svg">
+      <h2>our pricing</h2>
+    </section>
+    <div class="col-12 d-flex flex-column m-auto justify-content-between mt-5 mb-5">
+        <div class="row d-flex justify-content-between">
+            <div class="card" style="width: 25rem;">
+                <img src="assets/server-svg.svg" class="card-img-top" alt="starter_vps">
+                <div class="card-body">
+                  <h3 class="card-title">9,99€/m</h3>
+                  <h5 class="card-title">VPS hosting</h5>
+                  <p class="card-text">The VPS servers comes in the default config with following configuration:</p>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Config</th>
+                        <th scope="col">Details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">CPU</th>
+                        <td>2 Core x86-64-v2-AES</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">RAM</th>
+                        <td>2GB</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Storage</th>
+                        <td colspan="2">50Gb Nvme Gen4.0 SSD</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Network</th>
+                        <td colspan="2">1.0Gb/s</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Access type</th>
+                        <td colspan="2">SSH via VPN</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="consult-btn">
+                    <a href="#" class="btn btn-primary d-flex justify-content-center" id="generic-button">Consult</a>
+                  </div>
+                </div>
+            </div>
+            <!-- 2nd card -->
+            <div class="card" style="width: 25rem;">
+                <img src="assets/server-svg.svg" class="card-img-top" alt="starter_vps">
+                <div class="card-body">
+                  <div class="pricing">
+                    <h3 class="card-title">14,99€/m</h3>
+                    <span class="badge badge-success bg-success text-white mb-3">Recommended</span>
+                  </div>
+                  <h5 class="card-title">Customized VPS hosting</h5>
+                  <p class="card-text">The VPS servers comes in the default config with following configuration:</p>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Config</th>
+                        <th scope="col">Details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">CPU</th>
+                        <td>2core /4 core x86-64-v2-AES</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">RAM</th>
+                        <td>2/4/8 GB</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Storage</th>
+                        <td colspan="2">120Gb Nvme Gen4.0 SSD</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Network</th>
+                        <td colspan="2">1.0Gb/s</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Access type</th>
+                        <td colspan="2">SSH via VPN</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Backup/restore</th>
+                        <td colspan="2"><img src="assets/checked-tick.svg" class="svg_img" alt="starter_vps"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="consult-btn">
+                    <a href="#" class="btn btn-primary d-flex justify-content-center" id="generic-button">Consult</a>
+                  </div>        
+                </div>
+            </div>
+            <!-- 3rd card -->
+            <div class="card" style="width: 25rem;">
+                <div class="card-imgs d-flex">
+                    <img src="assets/server-svg.svg" class="card-img-top" alt="starter_vps">
+                    <img src="assets/plus-svgrepo.svg" alt="starter_vps">
+                    <img src="assets/customer-service.svg" class="card-img-top" alt="starter_vps">
+                </div>
+                <div class="card-body">
+                  <div class="pricing">
+                    <h3 class="card-title">24,99€/m</h3>
+                  </div>
+                  <h5 class="card-title">Tailored support</h5>
+                  <p class="card-text">Supporting IT infra structures from small to medium businesses. The VPS' configurations are as:</p>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Config</th>
+                        <th scope="col">Details</th>
+                        <th scope="col">Expandable</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">CPU</th>
+                        <td>2core /4 core x86-64-v2-AES</td>
+                        <td>2 x 2core /4 core x86-64-v2-AES</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">RAM</th>
+                        <td>2/4/8 GB</td>
+                        <td>2 x 2/4/8 GB</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Storage</th>
+                        <td>120Gb Nvme Gen4.0 SSD</td>
+                        <td>Upto 500GB Nvme Gen4.0 SSD</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Network</th>
+                        <td>1.0Gb/s</td>
+                        <td>2.5Gb/s</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Access type</th>
+                        <td>SSH via VPN</td>
+                        <td>VNC support</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Backup/restore</th>
+                        <td><img src="assets/checked-tick.svg" class="svg_img" alt="starter_vps"></td>
+                        <td><img src="assets/checked-tick.svg" class="svg_img" alt="starter_vps"></td>
+                      </tr>
+                    </tbody>
+                  </table>                 
+                  <div class="consult-btn">
+                    <a href="#" class="btn btn-primary d-flex justify-content-center" id="generic-button">Consult</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

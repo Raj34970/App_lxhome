@@ -1,0 +1,39 @@
+
+
+img.card-img-top {
+    width: 150px;
+    margin: auto;
+    padding: 10px;
+}
+
+img.svg_img {
+    width: 30px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+a#generic-button {
+    background: #9542b3;
+    border: none;
+}
+
+section#pricing {
+    padding: 0px;
+    background: #f5dcff;
+    color: #7a208f;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 2px solid;
+}
+
+img.section_svg {
+    padding: 15px;
+    width: 70px;
+}
