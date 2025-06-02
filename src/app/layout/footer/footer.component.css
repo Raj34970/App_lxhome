@@ -1,0 +1,33 @@
+.footer_main {
+    display: flex;
+    padding: 35px;
+    justify-content: space-around;
+    background: #e5d7e7;
+}
+a.a_common {
+    color: #202d41;
+    text-decoration: none;
+}
+li.common_li{
+    list-style: none;
+}
+ul.common_ul{
+    padding: 0;
+}
+.footer_div {
+    padding: 15px;
+    max-width: 30rem;
+    margin: 15px;
+    color: #202d41;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #e5e5e5, transparent);
+    box-shadow: 9px 8px 20px 4px #202d410d;
+}
+.copyrights {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    background: #762085;
+    color: white;
+    font-weight: 600;
+}

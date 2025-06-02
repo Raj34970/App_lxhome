@@ -4,6 +4,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { ServersComponent } from './pages/servers/servers.component';
 import { NasComponent } from './pages/nas/nas.component';
 import { authGuard } from './guards/auth.guard';
+import { SwitchComponent } from './pages/switch/switch.component';
+import { FirewallComponent } from './pages/firewall/firewall.component';
 
 export const routes: Routes = [
     {
@@ -25,6 +27,16 @@ export const routes: Routes = [
         path: 'nas',
         component: NasComponent,
         title: 'nas'
+    },
+    {
+        path: 'switch',
+        component: SwitchComponent,
+        title: 'switch'
+    },
+    {
+        path: 'firewall',
+        component: FirewallComponent,
+        title: 'firewall'
     },
     {
         path: '',
