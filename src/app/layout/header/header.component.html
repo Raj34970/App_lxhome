@@ -11,7 +11,15 @@
       </ul>
     </div>
     <div class="right">
-      <a class="avatar"><img src="assets/avatar-svgrepo-com.svg" alt="svg" class="avatar"></a>
+      <div class="avatar-container" (click)="toggleMenu()">
+        <img src="assets/avatar-svgrepo-com.svg" alt="avatar" class="avatar" />
+      </div>
+      <div class="menu" *ngIf="menuOpen">
+        <ul id="right_ul">
+          <li (click)="goToSettings()" id="right_li">Account Settings</li>
+          <li (click)="logout()" id="right_li">Logout</li>
+        </ul>
+      </div>
     </div>
   </div>
 </header>

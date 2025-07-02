@@ -63,3 +63,44 @@ img.header_li_svg {
     margin: auto;
     margin-inline: 0;
 }
+
+
+/* header.component.scss */
+.avatar-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.menu {
+  margin-top: 10px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #202d41;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+ul#right_ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+li#right_li {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+li#right_li:hover {
+    background-color: #f0f0f0;
+    color: #202d41;
+}

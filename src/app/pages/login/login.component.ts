@@ -21,22 +21,26 @@ export class LoginComponent {
   constructor(private auth: AuthService, private router: Router) {}
 
   onLogin() {
-    if (this.loginForm.invalid) {
-      this.loginFailed = true;
-      return;
-    }
-    
-    const { username, password } = this.loginForm.value;
-    
-    this.auth.login(username!, password!).subscribe({
-      next: () => {
-        this.loginFailed = false;
-        this.router.navigate(['/home']);
-      },
-      error: () => {
-        this.loginFailed = true;
-      }
-    });
+  if (this.loginForm.invalid) {
+    this.loginFailed = true;
+    return;
   }
+  
+  const { username, password } = this.loginForm.value;
+  
+  this.auth.login(username!, password!).subscribe({
+    next: (res) => {
+      // Store the token returned by backend
+      this.auth.storeToken(res.token);
+
+      this.loginFailed = false;
+      this.router.navigate(['/home']);
+    },
+    error: () => {
+      this.loginFailed = true;
+    }
+  });
+}
+
   
 }

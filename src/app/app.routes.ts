@@ -11,7 +11,8 @@ export const routes: Routes = [
     {
         path: 'home',
         component: HomeComponent,
-        title: 'home'
+        title: 'home',
+        canActivate: [authGuard]
     },
     {
         path: 'login',
@@ -21,22 +22,26 @@ export const routes: Routes = [
     {
         path: 'servers',
         component: ServersComponent,
-        title: 'servers'
+        title: 'servers',
+        canActivate: [authGuard]
     },
     {
         path: 'nas',
         component: NasComponent,
-        title: 'nas'
+        title: 'nas',
+        canActivate: [authGuard]
     },
     {
         path: 'switch',
         component: SwitchComponent,
-        title: 'switch'
+        title: 'switch',
+        canActivate: [authGuard]
     },
     {
         path: 'firewall',
         component: FirewallComponent,
-        title: 'firewall'
+        title: 'firewall',
+        canActivate: [authGuard]
     },
     {
         path: '',
